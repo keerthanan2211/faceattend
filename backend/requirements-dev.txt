@@ -1,0 +1,13 @@
+# Tests use a fake face engine, so OpenCV models aren't needed to run them
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+sqlalchemy==2.0.36
+pydantic-settings==2.7.0
+python-multipart==0.0.19
+pillow==11.0.0
+numpy==1.26.4
+slowapi==0.1.9
+cryptography==44.0.0
+pytest==8.3.4
+httpx==0.28.1
+ruff==0.8.4
