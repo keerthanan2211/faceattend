@@ -1,13 +1,10 @@
 # FaceAttend
 
+[![CI](https://github.com/keerthanan2211/faceattend/actions/workflows/ci.yml/badge.svg)](https://github.com/keerthanan2211/faceattend/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Face-recognition attendance for field technicians, with **server-verified liveness**. A shared tablet at a work site becomes a check-in kiosk: technicians look at the camera, turn their head when asked, and are checked in or out. Admins enrol technicians, review attendance and hours on site, and export reports.
 
 **Stack:** Python · FastAPI · OpenCV (YuNet + SFace ONNX models) · NumPy · AES-256-GCM (cryptography) · SQLAlchemy + SQLite · React · TypeScript · Vite · TanStack Query · Tailwind CSS · Docker
-
-> **Live demo:** _add your deployed URL here_
-
-<!-- Add screenshots after you run the app -->
-<!-- ![Kiosk](docs/screenshots/kiosk.png) -->
 
 ---
 
@@ -152,7 +149,7 @@ Keep `TEMPLATE_KEY` safe: it encrypts every enrolled face, and losing it means r
 ### Option 1: Docker
 
 ```bash
-git clone https://github.com/<your-username>/faceattend.git
+git clone https://github.com/keerthanan2211/faceattend.git
 cd faceattend
 # put the two lines generated above into a file named .env in this folder
 docker compose up --build
