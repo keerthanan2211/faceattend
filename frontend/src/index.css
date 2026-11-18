@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-concrete text-asphalt antialiased; }
+:focus-visible { outline: 3px solid #F2C200; outline-offset: 2px; }
+
+@layer components {
+  .btn { @apply inline-flex h-11 items-center justify-center gap-2 rounded-md px-5 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60; }
+  .btn-primary { @apply btn bg-sign text-white hover:bg-sign-dark; }
+  .btn-secondary { @apply btn border border-concrete-line bg-white hover:border-sign; }
+  .input { @apply h-11 w-full rounded-md border border-concrete-line bg-white px-3 text-sm focus:border-sign focus:outline-none; }
+  .label { @apply mb-1.5 block text-sm font-semibold; }
+  /* The highway-sign panel: green with an inset white border */
+  .sign-panel { @apply rounded-xl bg-sign p-1.5 text-white; }
+  .sign-panel > div { @apply rounded-lg border-[3px] border-white px-6 py-5; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
